@@ -1,0 +1,163 @@
+.main{
+    border: none;
+    background-color: rgba(240,242,245,255);
+    height: 750px;
+    width: 1263px;
+    margin-top: -8px;
+    margin-left: -8px;
+    display: flex;
+}
+
+
+.imglogo{
+    margin-left: 110px;
+    margin-top: 140px;
+    float: left;
+    height: 150px;
+}
+.logincontainer{
+    border-style:inherit;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 700px;
+    margin-top: 40px;
+    height: 330px;
+    width: 365px;
+    background-color: white;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    /* box-shadow: 0px 5px 5px 0px rgba(182, 179, 179, 0.5); */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1); */
+}
+.txt{
+    position: relative;
+    right: 270px;
+    bottom: -235px;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+}
+
+.email{
+    padding-left: -5px;
+    padding-top: 5px;
+    width: 150px;
+    border-color: rgba(219, 230, 240, 0.726);
+}
+.password{
+    padding-left: -5px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border-color: rgba(219, 230, 240, 0.726);
+}
+.login_button{
+    border: none;
+    width: 360px;
+    height: 50px;
+    margin-left: 2px;
+    margin-top: 30px;
+    border: 1px solid #1877f2;
+    border-radius: 7px;
+    font-size: 22px;
+    background-color: #1877f2;
+}
+#forgpas :hover{
+    padding-left: 20px;
+    padding-top: 55px;
+    text-decoration: underline;
+}
+.createnewac{
+    background-color: rgba(66,183,42,255);
+    text-decoration: none;
+    width: 195px;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid rgba(66,183,42,255);
+    margin-top: 25px;
+    margin-left: 90px;
+}
+
+#newaccount{
+    color: white;
+    font-size: 17px;
+}
+
+.inputtext{
+    width: 355px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 2px;
+    font-size: 17px;
+    border-color: rgb(228, 225, 225);
+}
+
+#loglink{
+    color: white;
+    text-decoration: none;
+}
+
+.forgetpass{
+    margin-left: 122px;
+    margin-top: 19px;
+    font-family: Compasse;
+}
+
+#link-celebrity{
+    margin-left: 750px;
+    font-size: 13px;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+
+.line{
+    width: 350px;
+    height: 0.5px;
+    margin-top: 20px;
+    margin-left: 8px;
+    color: rgb(244, 242, 242);
+}
+
+.linelinks{
+    width: 950px;
+    height: 0.5px;
+    margin-top: 15px;
+    margin-left: 120px;
+    color: rgb(244, 242, 242);
+    visibility: inherit;
+}
+
+.link{
+    color: gray;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left: 120px;
+    word-spacing: 10px;
+    font-size: 13px;
+}
+
+.languages{
+    font-size: 13px;
+    color: gray;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 120px;
+    word-spacing: 10px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+  
+a {
+    text-decoration: none;
+}
+.links{
+    background-color: #fff;
+    width: 1250px;
+    height: 150px;
+}
+
+#forgpasslink{
+    color: #1877f2;
+}
