@@ -7,17 +7,7 @@ can be found in the LICENSE file at https://angular.io/license
 -->
 
 <div *ngFor="let product of products">
-  <h3>
-    <a href="{{ product.details }}" [title]="product.name + ' details'">
-      {{ product.name }}
-    </a>
-  </h3>
-  <img src="{{ product.photo }}" width="150" />
-  <p *ngIf="product.description">Description: {{ product.description }}</p>
-  <button
-    type="button"
-    (click)="share('https://t.me/share/url?url=' + product.details)"
-  >
-    Share
-  </button>
+  <!-- {{categ}}
+   -->
+  <app-product-item [product] = "product" [categ] = "categ"></app-product-item>
 </div>

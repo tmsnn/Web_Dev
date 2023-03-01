@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 import { products } from '../products';
 
@@ -9,10 +10,20 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = [...products];
+  categ : string | undefined;
+  link = '';
 
   share(url: string) {
     window.open(url, '_blank');
   }
+
+  
+constructor(private route: ActivatedRoute) { 
+  this.route.url.subscribe(url => { 
+    this.link = url.join('/'); 
+    this.categ = this.link.split('/').pop();  
+  }); 
+}
 }
 
 /*

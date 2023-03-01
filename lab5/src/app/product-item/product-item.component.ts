@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output, Input } from '@angular/core';
+import { Product } from '../products';
+
 
 @Component({
   selector: 'app-product-item',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-item.component.css']
 })
 export class ProductItemComponent {
-
+  @Input() product: Product ;
+  @Input() categ: string | undefined;
+  see = true;
+    constructor () {
+      this.product = new Product;
+    }
 }

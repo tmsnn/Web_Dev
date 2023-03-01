@@ -1,11 +1,20 @@
 import { Category } from "./categories";
 
-export interface Product {
-  id: number;
-  name: string;
-  price: number;
-  description: string;
-  category: Category['id'];
+export class Product {
+  id: number | undefined;
+  name: string | undefined;
+  price: number | undefined;
+  details: string;
+  photo: string;
+  description: string | undefined;
+  like: number ;
+  category: string | undefined;
+
+  constructor() {
+    this.details = '';
+    this.photo = '';
+    this.like = 0;
+  }
 }
 
 export const products = [
@@ -18,7 +27,8 @@ export const products = [
       'https://kaspi.kz/shop/p/apple-iphone-14-pro-max-256gb-fioletovyi-106363342/?c=750000000#!/item',
     photo:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h00/h18/62948780834846/apple-iphone-14-pro-max-128gb-fioletovyj-106363342-1.jpg',
-    category: 1,
+    category: "1",
+    like: 0,
   },
   {
     id: 2,
@@ -29,7 +39,8 @@ export const products = [
       'https://kaspi.kz/shop/p/leadbros-bc-bd375l-375-l-korichnevyi-107704055/?c=750000000#!/item',
     photo:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h82/h16/66097598529566/leadbros-bc-bd375l-375-l-korichnevyi-107704055-1.jpg',
-    category: 2,
+    category: "2",
+    like: 0,
   },
   {
     id: 3,
@@ -40,7 +51,8 @@ export const products = [
       'https://kaspi.kz/shop/p/apple-watch-se-2nd-gen-40-mm-serebristyi-belyi-106362779/?c=750000000#!/item',
     photo:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hdd/h7c/62711077961758/apple-watch-se-2nd-generation-40-mm-serebristyj-belyj-106362779-1.jpg',
-    category: 1
+    category: "1",
+    like: 0,
   },
   {
     id: 4,
@@ -51,7 +63,8 @@ export const products = [
       'https://kaspi.kz/shop/p/dyson-pure-humidify-cool-ph04-106228300/?c=750000000#!/item',
     photo:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h47/h49/62040187863070/dyson-pure-humidify-cool-ph04-106228300-1.jpg',
-    category: 2
+    category: "2",
+    like: 0,
   },
   {
     id: 5,
@@ -62,7 +75,8 @@ export const products = [
       'https://kaspi.kz/shop/p/samsung-galaxy-a13-4-gb-64-gb-goluboi-104253442/?c=750000000#!/item',
     photo:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h1c/h79/49613837074462/smartfon-samsung-galaxy-a13-64gb-sm-a135flbvskz-blue-104253442-1.jpg',
-    category: 1
+    category: "1",
+    like: 0,
   },
   {
     id: 6,
@@ -73,7 +87,8 @@ export const products = [
       'https://kaspi.kz/shop/p/istikbal-rita-5d-211x62x210-slonovaja-kost--108387311/?c=750000000#!/item',
     photo:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h96/ha3/67756041142302/mondi-rita-108387311-1.jpg',
-    category: 4
+    category: "4",
+    like: 0,
   },
   {
     id: 7,
@@ -83,7 +98,8 @@ export const products = [
     details: 'https://kaspi.kz/shop/p/lg-lhb655nk-2100099/?c=750000000#!/itema',
     photo:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h57/hf7/31583642517534/lg-lhb655nk-cernyj-2100099-1-Container.jpg',
-    category: 2
+    category: "2",
+    like: 0,
   },
   {
     id: 8,
@@ -94,7 +110,8 @@ export const products = [
       'https://kaspi.kz/shop/p/wmf-lumero-serebristyi-103886410/?c=750000000#!/item',
     photo:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h55/h5d/48988765093918/wmf-lumero-103886410-1.jpg',
-    category: 2
+    category: "2",
+    like: 0,
   },
   {
     id: 9,
@@ -105,7 +122,8 @@ export const products = [
       'https://kaspi.kz/shop/p/samsung-wf18t8000gv-lp-chernyi-101703431/?c=750000000#!/item',
     photo:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/he9/h9c/34083757948958/samsung-wf18t8000gv-lp-cernyj-101703431-1-Container.jpg',
-    category: 2
+    category: "2",
+    like: 0,
   },
   {
     id: 10,
@@ -116,7 +134,8 @@ export const products = [
       'https://kaspi.kz/shop/p/miele-spql0-scout-rx3-home-vision-hd-chernyi-zolotistyi-105586351/?c=750000000#!/item',
     photo:
       'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h5b/he2/52047057092638/miele-spql0-scout-rx3-home-vision-hd-zolotistyj-105586351-1.jpg',
-    category: 2
+    category: "2",
+    like: 0,
   },
 ];
 
