@@ -1,0 +1,16 @@
+<div *ngIf="categ==product.category">
+    <p>product-item works!</p>
+ <h3>
+    <a href="{{ product.details }}" [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+  </h3>
+  <img src="{{ product.photo }}" width="150" />
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
+</div>
+  <!-- <button
+    type="button"
+    (click)="share('https://t.me/share/url?url=' + product.details)"
+  >
+    Share
+  </button> -->
