@@ -1,0 +1,7 @@
+<!-- <p>product-category works!</p> -->
+<div class="main">
+    <h1>Categories:</h1>
+    <div *ngFor="let cate of category">
+        <a [routerLink]="['/categories', cate.id]" >{{cate.name}}</a>
+    </div>
+</div>
